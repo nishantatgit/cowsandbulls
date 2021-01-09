@@ -5,4 +5,4 @@ function getResultString(resultObject, sequenceLength = 4) {
     } ${bulls === sequenceLength ? "(Win!)" : ""}`;
   }
   
-export default getGResultString;
+export default getResultString;
