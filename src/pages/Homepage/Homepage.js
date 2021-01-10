@@ -8,7 +8,7 @@ import './Homepage.scss';
 
 const HomePage = (props) => {
     return (<main className="homepage">
-        <h1>{content.mainHeader}</h1>
+        <h1 className="header">{content.mainHeader}</h1>
         <Game />
     </main>)
 }

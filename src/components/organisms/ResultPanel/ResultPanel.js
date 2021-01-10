@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 
 import Table from '../../molecules/Table/Table';
 
@@ -8,14 +8,15 @@ import getResultString from '../../../utils/getResultString';
 
 import resultHeader from './resultHeader';
 
+import './ResultPanel.scss';
+
 const ResultPanel = (props) => {
-    const  { answerSequence, userInputs } = props;
+    const  { answerSequence, userInputs, callback } = props;
     let [ answerObject, setAnswerObject ] = useState(null);
     let [ userInputObject, setUserInputObject ] = useState(null);
     let [ results, setResults ] = useState([]);
 
     useEffect(() => {
-        console.log('answerSequence: ', answerSequence);
         if(answerSequence){
             setAnswerObject(getObjectFromSequence(answerSequence))
         }
@@ -33,11 +34,14 @@ const ResultPanel = (props) => {
         if(userInputObject){
             const resultObject = compareSequenceObjects(answerObject, userInputObject);
             const resultString = getResultString(resultObject);
-            setResults([...results, [results.length,userInputs[userInputs.length - 1], resultString ]]);
+            setResults([...results, [results.length + 1,userInputs[userInputs.length - 1], resultString ]]);
+            if(resultObject.bulls === 4){
+                callback();
+            }
         }
     }, [userInputObject])
 
-    return <Table data={{ headers: resultHeader, rows: results }} /> 
+    return <div className="result-panel"><Table data={{ headers: resultHeader, rows: results }} /></div> 
 }
 
 export default ResultPanel;

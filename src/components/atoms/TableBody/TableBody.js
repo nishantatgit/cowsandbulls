@@ -4,9 +4,9 @@ const TableBody = (props) => {
     const { rows } = props;
     return <tbody>
         {rows.map((row) => (
-      <tr>
+      <tr key={row[0]}>
         {row.map((col) => (
-          <td>{col}</td>
+          <td key={col}>{col}</td>
         ))}
       </tr>
     ))}

@@ -10,8 +10,6 @@ function Table(props) {
     id
   } = props;
 
-  console.log("data ", rows);
-
   return (
     <table id={id}>
       <caption>{content.resultCaption}</caption>
