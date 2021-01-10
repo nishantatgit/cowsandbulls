@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/cowsandbulls/static/css/main.1d60a462.chunk.css",
+    "main.js": "/cowsandbulls/static/js/main.d65e2453.chunk.js",
+    "main.js.map": "/cowsandbulls/static/js/main.d65e2453.chunk.js.map",
+    "runtime-main.js": "/cowsandbulls/static/js/runtime-main.ab92ed28.js",
+    "runtime-main.js.map": "/cowsandbulls/static/js/runtime-main.ab92ed28.js.map",
+    "static/js/2.ebcb94c8.chunk.js": "/cowsandbulls/static/js/2.ebcb94c8.chunk.js",
+    "static/js/2.ebcb94c8.chunk.js.map": "/cowsandbulls/static/js/2.ebcb94c8.chunk.js.map",
+    "index.html": "/cowsandbulls/index.html",
+    "static/css/main.1d60a462.chunk.css.map": "/cowsandbulls/static/css/main.1d60a462.chunk.css.map",
+    "static/js/2.ebcb94c8.chunk.js.LICENSE.txt": "/cowsandbulls/static/js/2.ebcb94c8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab92ed28.js",
+    "static/js/2.ebcb94c8.chunk.js",
+    "static/css/main.1d60a462.chunk.css",
+    "static/js/main.d65e2453.chunk.js"
+  ]
+}
